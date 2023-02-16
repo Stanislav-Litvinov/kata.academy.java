@@ -1,0 +1,1 @@
+## Java automation. KATA academy project.
