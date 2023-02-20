@@ -1,4 +1,4 @@
-package kata.academy.lesson1;
+package kata.academy.lesson1_2;
 
 import java.math.BigInteger;
 

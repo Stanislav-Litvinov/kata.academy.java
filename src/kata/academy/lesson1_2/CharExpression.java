@@ -1,4 +1,4 @@
-package kata.academy.lesson1;
+package kata.academy.lesson1_2;
 
 // 2.2.2. Кодовая задача «Преобразование базовых типов данных»
 

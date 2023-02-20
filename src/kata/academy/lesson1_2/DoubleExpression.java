@@ -1,4 +1,4 @@
-package kata.academy.lesson1;
+package kata.academy.lesson1_2;
 
 // 2.1.10. Кодовая задача «Вещественные числа и класс Maths»
 
