@@ -1,5 +1,7 @@
 package kata.academy.lesson1;
 
+// 2.1.10. Кодовая задача «Вещественные числа и класс Maths»
+
 public class DoubleExpression {
     public static void main(String[] args) {
         System.out.println("Return 'true' if (a + b) == c: " + doubleExpression(4, 2, 6));

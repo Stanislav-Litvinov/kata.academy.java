@@ -1,6 +1,6 @@
 package kata.academy.lesson1;
 
-import java.text.DecimalFormat;
+// 2.1.12 Кодовая задача «Вычисление радиуса окружности»
 
 public class CircleArea {
     public static void main(String[] args) {
@@ -8,8 +8,7 @@ public class CircleArea {
     }
 
     public static void calcCircleRaduis(double area) {
-        DecimalFormat df = new DecimalFormat("0.000");
-        System.out.printf("Радиус окружности по заданной площади равен: "
-                + df.format(Math.sqrt(area / Math.PI)));
+        System.out.println("Радиус окружности по заданной площади равен:");
+        System.out.printf("%.3f", Math.sqrt(area / Math.PI));
     }
 }

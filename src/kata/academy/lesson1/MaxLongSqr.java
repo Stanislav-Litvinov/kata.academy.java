@@ -2,6 +2,8 @@ package kata.academy.lesson1;
 
 import java.math.BigInteger;
 
+// 2.1.13 Кодовая задача  «Получение квадрата максимального long»
+
 public class MaxLongSqr {
     public static void main(String[] args) {
         maxLongSqr();

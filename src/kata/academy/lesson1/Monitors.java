@@ -1,5 +1,7 @@
 package kata.academy.lesson1;
 
+// 2.1.6. Кодовая задача «Арифметические вычисления»
+
 public class Monitors {
     public static void main(String[] args) {
         drawisMonitorsCounter(63, 5);

@@ -1,12 +1,15 @@
 package kata.academy.lesson1;
 
+// 2.2.2. Кодовая задача «Преобразование базовых типов данных»
+
 class CharExpression {
     public static void main(String[] args) {
 
-        System.out.println(charExpression(92));
+        System.out.println(charExpression(20));
     }
 
     public static char charExpression(int a) {
-        return (char) ++a;
+        char ch = '\\';
+        return (char) (a + ch);
     }
 }

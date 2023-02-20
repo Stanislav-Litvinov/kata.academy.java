@@ -1,5 +1,7 @@
 package kata.academy.lesson1;
 
+// 2.1.4. Кодовая задача «Объявление примитивных типов данных»
+
 public class ValueTypes {
     public static void main(String[] args) {
         byte varbyte = -128;
