@@ -14,7 +14,7 @@ class Factorial {
     }
 
     public static void main(String[] args) {
-        System.out.printf("Факториал числа %d равен %d \n", 0, factorial(-0));
+        System.out.printf("Факториал числа %d равен %d \n", 0, factorial(0));
         System.out.printf("Факториал числа %d равен %d \n", 1, factorial(1));
         System.out.printf("Факториал числа %d равен %d \n", 3, factorial(3));
         System.out.printf("Факториал числа %d равен %d \n", 19, factorial(19));
