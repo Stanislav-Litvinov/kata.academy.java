@@ -1,16 +1,15 @@
 package kata.academy.lesson3;
 
+// 3.1.8. Кодовая задача «Вычисление с рекурсией»
+
 import java.math.BigInteger;
 
-// 3.1.7.  Кодовая задача «Вычисление факториала заданного натурального числа»
-
-class Factorial {
+class Recursion {
     public static BigInteger factorial(int value) {
-        BigInteger f = BigInteger.ONE;
-        for (int i = 2; i <= value; i++) {
-            f = f.multiply(BigInteger.valueOf(i));
+        if (value <= 1) {
+            return BigInteger.ONE;
         }
-        return f;
+        return BigInteger.valueOf(value).multiply(factorial(value - 1));
     }
 
     public static void main(String[] args) {
@@ -21,4 +20,3 @@ class Factorial {
         System.out.printf("Факториал числа %d равен %d \n", 25, factorial(25));
     }
 }
-
