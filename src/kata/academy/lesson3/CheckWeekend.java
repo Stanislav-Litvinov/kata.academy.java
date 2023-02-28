@@ -2,8 +2,6 @@ package kata.academy.lesson3;
 
 // 3.1.12 Кодовая задача «Тернарный оператор»
 
-import java.util.Objects;
-
 class CheckWeekend {
     public static void main(String[] args) {
         System.out.println(checkWeekend("Monday"));
@@ -18,7 +16,7 @@ class CheckWeekend {
     public static String checkWeekend(String weekday) {
         String saturday = "Saturday";
         String sunday = "Sunday";
-        return Objects.equals(weekday, sunday) ? "Ура, выходной!" :
-                Objects.equals(weekday, saturday) ? "Ура, выходной!" : "Надо еще поработать";
+        return (saturday.equals(weekday) || sunday.equals(weekday)) ?
+                "Ура, выходной!" : "Надо еще поработать";
     }
 }
