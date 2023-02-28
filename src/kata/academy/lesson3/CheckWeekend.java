@@ -13,18 +13,12 @@ class CheckWeekend {
         System.out.println(checkWeekend("Friday"));
         System.out.println(checkWeekend("Saturday"));
         System.out.println(checkWeekend("Sunday"));
-        System.out.println(checkWeekend("Понедельник"));
     }
 
     public static String checkWeekend(String weekday) {
-        String days = weekday.toLowerCase();
-        return Objects.equals(days, "monday") ? "Надо еще поработать" :
-                Objects.equals(days, "tuesday") ? "Надо еще поработать" :
-                        Objects.equals(days, "wednesday") ? "Надо еще поработать" :
-                                Objects.equals(days, "thursday") ? "Надо еще поработать" :
-                                        Objects.equals(days, "friday") ? "Надо еще поработать" :
-                                                Objects.equals(days, "saturday") ? "Ура, выходной!" :
-                                                        Objects.equals(days, "sunday") ? "Ура, выходной!" :
-                                                                "Wrong day of week";
+        String saturday = "Saturday";
+        String sunday = "Sunday";
+        return Objects.equals(weekday, sunday) ? "Ура, выходной!" :
+                Objects.equals(weekday, saturday) ? "Ура, выходной!" : "Надо еще поработать";
     }
 }
