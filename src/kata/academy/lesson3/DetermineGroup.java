@@ -29,6 +29,8 @@ public class DetermineGroup {
             return 2;
         } else if (age >= 18 && age <= 65) {
             return 3;
-        } else return -1;
+        } else {
+            return -1;
+        }
     }
 }
