@@ -14,9 +14,7 @@ class CheckWeekend {
     }
 
     public static String checkWeekend(String weekday) {
-        String saturday = "Saturday";
-        String sunday = "Sunday";
-        return (saturday.equals(weekday) || sunday.equals(weekday)) ?
+        return ("Saturday".equalsIgnoreCase(weekday) || "Sunday".equalsIgnoreCase(weekday)) ?
                 "Ура, выходной!" : "Надо еще поработать";
     }
 }
