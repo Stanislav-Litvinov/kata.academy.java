@@ -17,5 +17,12 @@ class ArrayMergeAndSort {
         System.arraycopy(secondArray, 0, newArr, firstArray.length, secondArray.length);
         Arrays.sort(newArr);
         System.out.println(Arrays.toString(newArr));
+
+        /* или такой вариант
+        int[] copyArr;
+        copyArr = Arrays.copyOf(secondArray, secondArray.length);
+        Arrays.sort(copyArr);
+        System.out.println(Arrays.toString(copyArr));
+         */
     }
 }
