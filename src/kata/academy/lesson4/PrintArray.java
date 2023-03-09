@@ -15,7 +15,7 @@ class PrintArray {
         for (int number : numbers) {
             System.out.print(separator);
             System.out.print(number);
-            separator = ",";
+            separator = " ,";
         }
         System.out.println("]");
     }
