@@ -4,22 +4,16 @@ package kata.academy.lesson5;
 
 class ParseAndSqrt {
     public static void main(String[] args) {
-        parseAndSqrt("14213123"); //3770
-        parseAndSqrt("64"); //8
-        parseAndSqrt("5"); //2
-        parseAndSqrt("1"); //1
-        parseAndSqrt("0"); //0
-        parseAndSqrt("-1"); //sqrt can't be negative
+        System.out.println(parseAndSqrt("14213123")); //3770
     }
 
-    public static void parseAndSqrt(String number) {
+    public static long parseAndSqrt(String number) {
         long num = Long.parseLong(number);
         if (num < 0) {
-            System.out.println("sqrt can't be negative");
-        } else if (num == 0 || num == 1) {
-            System.out.println(num);
-        } else {
-            System.out.println(Math.round(Math.sqrt(num)));
+            System.out.print("Can't be negative: ");
+        } else if (num != 1 && num != 0) {
+            num = Math.round(Math.sqrt(num));
         }
+        return num;
     }
 }

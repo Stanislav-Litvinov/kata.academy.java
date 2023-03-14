@@ -2,21 +2,24 @@ package kata.academy.lesson4;
 
 // 4.1.4 Кодовая задача «Взятие части массива»
 
+import java.util.Arrays;
+
 class GetSubArrayBetween {
     public static void main(String[] args) {
-        getSubArrayBetween((new int[]{1, 3, 5, 6, 9, 11, 24}), 4, 10);
+        System.out.println(Arrays.toString(getSubArrayBetween((new int[]{1, 3, 5, 6, 9, 11, 24}), 4, 10)));
     }
 
-    public static void getSubArrayBetween(int[] numbers, int start, int end) {
-        System.out.print("[");
-        String separator = "";
-        for (int number : numbers) {
-            if (number >= start && number <= end) {
-                System.out.print(separator);
-                System.out.print(number);
-                separator = ",";
+    public static int[] getSubArrayBetween(int[] numbers, int start, int end) {
+        int[] arrBetween = new int[numbers.length];
+        int count = 0;
+        for (int num : numbers) {
+            if (num >= start && num <= end) {
+                arrBetween[count] = num;
+                count++;
             }
         }
-        System.out.println("]");
+        int[] result = new int[count];
+        System.arraycopy(arrBetween, 0, result, 0, count);
+        return result;
     }
 }

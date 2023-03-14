@@ -2,6 +2,8 @@ package kata.academy.lesson4;
 
 // 4.1.13. Кодовая задача «Работа с массивами и условными операторами»
 
+import java.util.StringJoiner;
+
 class PrintOddNumbers {
     public static void main(String[] args) {
         printOddNumbers(new int[]{3, 5, 20, 8, 7, 3, 100});
@@ -11,14 +13,12 @@ class PrintOddNumbers {
     }
 
     public static void printOddNumbers(int[] arr) {
-        String seporator = "";
+        StringJoiner stringJoiner = new StringJoiner(",");
         for (int i : arr) {
             if (i % 2 != 0) {
-                System.out.print(seporator);
-                System.out.print(i);
-                seporator = " ,";
+                stringJoiner.add("" + i);
             }
         }
-        System.out.println();
+        System.out.println(stringJoiner);
     }
 }

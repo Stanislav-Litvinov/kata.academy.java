@@ -19,6 +19,6 @@ class IsPalindrome {
         StringBuilder input1 = new StringBuilder();
         input1.append(text);
         input1.reverse();
-        return text.equalsIgnoreCase(String.valueOf(input1));
+        return text.equalsIgnoreCase(input1.toString());
     }
 }

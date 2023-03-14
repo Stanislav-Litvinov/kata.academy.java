@@ -6,26 +6,22 @@ import java.util.Arrays;
 
 class ArraysGetArrayMiddle {
     public static void main(String[] args) {
-        getArrayMiddle(new int[]{1, 5, 2, 3, 2, 17});
-        getArrayMiddle(new int[]{14, 16, 3});
-        getArrayMiddle(new int[]{});
+        System.out.println(Arrays.toString(getArrayMiddle(new int[]{1, 5, 2, 3, 2, 17})));
+        System.out.println(Arrays.toString(getArrayMiddle(new int[]{14, 16, 3})));
+        System.out.println(Arrays.toString(getArrayMiddle(new int[]{})));
     }
 
-    public static void getArrayMiddle(int[] numbers) {
-        int[] middleValue;
+    public static int[] getArrayMiddle(int[] numbers) {
+        int middleValue = numbers.length / 2;
         if (numbers.length == 0) {
-            System.out.println(Arrays.toString(numbers));
-        } else if (numbers.length % 2 == 0) {
-            middleValue = new int[2];
-            int[] copy = new int[middleValue.length];
-            middleValue[0] = numbers[(numbers.length / 2) - 1];
-            middleValue[1] = numbers[numbers.length / 2];
-            System.arraycopy(numbers, middleValue[0], copy, 0, middleValue.length);
-            System.out.println(Arrays.toString(copy));
+            return numbers;
+        }
+        if (numbers.length % 2 == 0) {
+            return Arrays.copyOfRange(numbers, middleValue - 1, middleValue + 1);
+
         } else {
-            middleValue = new int[1];
-            middleValue[0] = numbers[numbers.length / 2];
-            System.out.println(Arrays.toString(middleValue));
+            return Arrays.copyOfRange(numbers, middleValue, middleValue + 1);
+
         }
     }
 }
