@@ -11,7 +11,7 @@ class ParseAndSqrt {
         long num = Long.parseLong(number);
         if (num < 0) {
             System.out.print("Can't be negative: ");
-        } else if (num != 1 && num != 0) {
+        } else {
             num = Math.round(Math.sqrt(num));
         }
         return num;
