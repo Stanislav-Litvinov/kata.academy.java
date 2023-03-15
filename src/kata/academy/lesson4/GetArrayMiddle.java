@@ -18,13 +18,9 @@ class GetArrayMiddle {
             return numbers;
         }
         if (numbers.length % 2 == 0) {
-            middleValue = new int[2];
-            middleValue[0] = numbers[(numbers.length / 2) - 1];
-            middleValue[1] = numbers[numbers.length / 2];
-
+            middleValue = new int[]{numbers[(numbers.length / 2) - 1], numbers[numbers.length / 2]};
         } else {
-            middleValue = new int[1];
-            middleValue[0] = numbers[numbers.length / 2];
+            middleValue = new int[]{numbers[numbers.length / 2]};
         }
         return middleValue;
     }
