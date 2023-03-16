@@ -18,7 +18,6 @@ class ArraysGetArrayMiddle {
         int middleValue = numbers.length / 2;
         if (numbers.length % 2 == 0) {
             return Arrays.copyOfRange(numbers, middleValue - 1, middleValue + 1);
-
         } else {
             return Arrays.copyOfRange(numbers, middleValue, middleValue + 1);
 
