@@ -12,10 +12,10 @@ class ArraysGetArrayMiddle {
     }
 
     public static int[] getArrayMiddle(int[] numbers) {
-        int middleValue = numbers.length / 2;
         if (numbers.length == 0) {
             return numbers;
         }
+        int middleValue = numbers.length / 2;
         if (numbers.length % 2 == 0) {
             return Arrays.copyOfRange(numbers, middleValue - 1, middleValue + 1);
 
