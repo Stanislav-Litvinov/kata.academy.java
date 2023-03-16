@@ -10,14 +10,10 @@ class InverseArray {
     }
 
     public static int[] inverseArray(int[] numbers) {
-        int[] reverse = new int[numbers.length];
-        int count = 0;
-        for (int i = numbers.length - 1; i >= 0; i--) {
-            reverse[count] = numbers[i];
-            count++;
+        int[] reverseArr = new int[numbers.length];
+        for (int i = 0; i < numbers.length; i++) {
+            reverseArr[i] = numbers[numbers.length - 1 - i];
         }
-        int[] result = new int[count];
-        System.arraycopy(reverse, 0, result, 0, count);
-        return result;
+        return reverseArr;
     }
 }
