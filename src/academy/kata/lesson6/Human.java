@@ -1,5 +1,7 @@
 package academy.kata.lesson6;
 
+// 2.3.10.  Практическое задание « Использовать различные модификаторы доступа»
+
 public class Human {
     private final String secret; //секретики
     private final String experience; //опыт
